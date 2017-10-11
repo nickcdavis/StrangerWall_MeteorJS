@@ -1,0 +1,17 @@
+<div class="message-list expanded row">
+  <div class="large-12 columns content">
+    <ul ng-repeat="message in messages">
+      <li>{{message.text}} {{message.read}}</li>
+    </ul>
+  </div>
+</div>
+<div class="message-entry expanded row">
+  <div class="large-12 columns">
+    <div class="input-group">
+      <input class="input-group-field" ng-model="newMessage.text">
+      <div class="input-group-button">
+        <input type="submit" class="button" value="Send" ng-click="pushMessage()">
+      </div>
+    </div>
+  </div>
+</div>

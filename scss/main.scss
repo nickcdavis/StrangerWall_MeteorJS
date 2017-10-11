@@ -1,0 +1,65 @@
+@import '{zurb:foundation-sites}/scss/foundation';
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+.message-list {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background-color: black;
+  & > .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 70px;
+    color: white;
+  }
+}
+
+.message-entry {
+  position: absolute;
+  bottom: 1px;
+  border-top: 1px solid lightgrey;
+  padding-top: .5em;
+  left: 0px;
+  right: 0px;
+  height: 65px;
+  background-color: white;
+}
+
+// .content ul {
+//   list-style: none;
+// }
