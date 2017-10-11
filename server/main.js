@@ -22,7 +22,7 @@ Meteor.methods({
 WebApp.connectHandlers.use('/nextMessage', (req, res, next) => {
   var message = messages.findOne({read: {$ne: true}}, {time: -1});
 
-  res.writeHead(200);
+  res.writeHead(200, {'Content-Type': 'text/plain'});
   if (message != undefined)
   {
     console.log(message);
