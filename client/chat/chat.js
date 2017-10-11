@@ -7,12 +7,6 @@ angular.module("strangerwall").controller("chatCtrl", ['$scope', '$meteor', '$in
   };
   $scope.messages = [];
 
-  $interval(function() {
-    $scope.$meteorSubscribe('messages:load').then(function(val) {
-      $scope.messages = $scope.$meteorCollection(messages, false);
-    });
-  }, 30000); //30 seconds
-
   $scope.load = function() {
     //Get data from server
 
@@ -27,4 +21,14 @@ angular.module("strangerwall").controller("chatCtrl", ['$scope', '$meteor', '$in
     });
   }
 
+  loadSubscription = function() {
+    $scope.$meteorSubscribe('messages:load').then(function(val) {
+      $scope.messages = $scope.$meteorCollection(messages, false);
+    });
+  }
+
+  $interval(function() {
+    loadSubscription();
+  }, 30000); //30 seconds
+  loadSubscription();
 }]);
