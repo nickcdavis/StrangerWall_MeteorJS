@@ -13,15 +13,15 @@ This project will require you to know maybe a little node.js, as well as a light
 ## Requirements
 * Really, just a computer for this part. I put the project together on a mac, so there may be a few steps that require SSH that may need to be translated if you are using Windows.
 
-###Step One: Install Meteor
+### Step One: Install Meteor
 Follow the steps provided at https://www.meteor.com/install
 
-###Step Two: Download the code to a directory of your choosing.
+### Step Two: Download the code to a directory of your choosing.
 ```
 git clone https://github.com/nickcdavis/StrangerWall_MeteorJS.git
 ```
 
-###Step Three: Test the console on your local machine
+### Step Three: Test the console on your local machine
 Meteor is pretty amazing if you haven't already worked with it. From here, you should be able to open a new terminal at the folder you installed the project, and run the following:
 ```
 meteor
@@ -29,14 +29,14 @@ meteor
 
 If all goes well, you should get a message stating "App running at: http://localhost:3000/"
 
-###Step Four: Upload app to a host (or don't)
+### Step Four: Upload app to a host (or don't)
 There are many options from here. You can upload it to your preferred node.js host of your choosing, you could even host it locally if you want to run it through your home network.
 
 With that said, if you are looking for a quick and dirty option, you can consider Heroku. It's free, it's easy, it's fast enough, it works.
 
 If you want to try Heroku, I'd highly suggest this set of [easy, bulletproof instructions](https://medium.com/@leonardykris/how-to-run-a-meteor-js-application-on-heroku-in-10-steps-7aceb12de234).
 
-###Step Five: Test the application on your hosting
+### Step Five: Test the application on your hosting
 Type in the URL of where it's hosted and see what happens. It should be pretty apparent when it works. From here, you will be able to point your esp8266 device to the url and it will pick up on the messages displayed in the queue.
 
 ## Further questions and comments
